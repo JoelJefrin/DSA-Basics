@@ -10,12 +10,14 @@ public class binarysearch {
         int key = sc.nextInt();
         int low = 0;
         int high = a.length - 1; 
+        int g = 0;
 
         while(low <= high){
             int mid = (low + high) / 2;
 
             if(a[mid] == key){
                 System.out.println("Element found at index: " + mid);
+                g = 1;
                 return;
             }
             else if(a[mid] < key){
@@ -25,6 +27,9 @@ public class binarysearch {
                 high = mid - 1;
             }
         }
+        if  (g == 0) {
+            System.out.println("Element not found in the array.");
+        } 
 
 
          
