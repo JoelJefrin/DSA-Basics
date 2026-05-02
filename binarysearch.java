@@ -8,6 +8,7 @@ public class binarysearch {
 
         System.out.println("Enter the element to be searched: ");
         int key = sc.nextInt();
+        sc.nextLine(); // Consume the newline character
         int low = 0;
         int high = a.length - 1; 
         int g = 0;
